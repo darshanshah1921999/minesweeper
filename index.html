@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simplified MineSweeper</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="game-container" id="game-container">
+      <div class="game-header">
+        <h2>Simplified MineSweeper</h2>
+        <div class="game-row">
+          <div class="col-25">
+            <label for="rows">Rows</label>
+          </div>
+          <div class="col-75">
+            <input type=number name="rows" id="rows" placeholder="No of rows..."/>
+          </div>
+        </div>
+        <div class="game-row">
+          <div class="col-25">
+            <label for="columns">columns</label>
+          </div>
+          <div class="col-75">
+            <input type=number name="columns" id="columns" placeholder="No of columns..."/>
+          </div>
+        </div>
+        <div class="game-row">
+          <div class="col-25">
+            <label for="bombs">Bombs</label>
+          </div>
+          <div class="col-75">
+            <input type=number name="bombs" id="bombs" placeholder="No of bombs..."/>
+          </div>
+        </div>
+        <div class="error-message" id="error"></div>
+      </div>
+      <button class="start-game" id="start">Start Game</button>
+    </div>      
+    <div id="board-container" class="center board-container hide">
+      <div class="button-container">
+        <div class="backBtn-container">
+          <button class="back" id="back">Back</button>          
+        </div>
+        <!-- <div class="resetBtn-container">
+          <button class="reset" id="reset">Reset</button>
+        </div> -->
+      </div>
+      
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
